@@ -1,0 +1,80 @@
+national:
+  ownership_rate:
+    value: 60.5
+    unit: "%"
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: "専用住宅のうち持ち家の割合（33,208,800戸 ÷ 54,893,100戸）"
+  detached_ratio:
+    value: 52.2
+    unit: "%"
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: "専用住宅のうち一戸建の割合（28,645,300戸 ÷ 54,893,100戸）"
+  detached_houses:
+    value: 28645300
+    unit: 戸
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+  car_per_household:
+    value: null
+    unit: 台/世帯
+    source: null
+    survey_year: null
+    todo: "全国・府・市で同一年次、同じ車種範囲、同じ世帯母数に揃えられる公式値を確認してから掲載する。"
+  aging_rate:
+    value: null
+    unit: "%"
+    source: null
+    survey_year: null
+    todo: "国勢調査または自治体統計で全国・府・市を同一年次に揃えて確認する。"
+  exterior_contractors_per_10k:
+    value: null
+    unit: 事業所/1万世帯
+    source: null
+    survey_year: null
+    todo: "経済センサスの対象産業分類を定義し、全国・府・市を同一年次で抽出してから掲載する。"
+
+prefecture:
+  osaka:
+    ownership_rate:
+      value: 54.1
+      unit: "%"
+      source: 令和5年住宅・土地統計調査 第10-4表
+      source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+      survey_year: 2023
+      note: "専用住宅のうち持ち家の割合（2,246,100戸 ÷ 4,148,300戸）"
+    detached_ratio:
+      value: 39.3
+      unit: "%"
+      source: 令和5年住宅・土地統計調査 第10-4表
+      source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+      survey_year: 2023
+      note: "専用住宅のうち一戸建の割合（1,631,600戸 ÷ 4,148,300戸）"
+    detached_houses:
+      value: 1631600
+      unit: 戸
+      source: 令和5年住宅・土地統計調査 第10-4表
+      source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+      survey_year: 2023
+    car_per_household:
+      value: null
+      unit: 台/世帯
+      source: null
+      survey_year: null
+      todo: "全国・府・市で同一年次、同じ車種範囲、同じ世帯母数に揃えられる公式値を確認してから掲載する。"
+    aging_rate:
+      value: null
+      unit: "%"
+      source: null
+      survey_year: null
+      todo: "国勢調査または自治体統計で全国・府・市を同一年次に揃えて確認する。"
+    exterior_contractors_per_10k:
+      value: null
+      unit: 事業所/1万世帯
+      source: null
+      survey_year: null
+      todo: "経済センサスの対象産業分類を定義し、全国・府・市を同一年次で抽出してから掲載する。"

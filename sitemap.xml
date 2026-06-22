@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
     <loc>https://tandocurado-ux.github.io/gaiko/osaka/toyonaka/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/guide/gaiko-estimate/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/guide/choose-contractor/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/guide/after-construction/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/guide/boundary-neighbor/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/guide/hm-vs-pro-cost/</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tandocurado-ux.github.io/gaiko/guide/product-select/</loc>
     <lastmod>2026-06-22</lastmod>
   </url>
 </urlset>
