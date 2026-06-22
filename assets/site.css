@@ -57,12 +57,17 @@ img {
 }
 
 .brand {
+  min-width: 0;
   font-weight: 800;
   letter-spacing: 0;
+  line-height: 1.25;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .nav-links {
+  flex-wrap: wrap;
+  justify-content: flex-end;
   display: flex;
   align-items: center;
   gap: 18px;
@@ -831,6 +836,45 @@ details p {
   color: var(--muted);
 }
 
+.service-detail {
+  padding: 0;
+}
+
+.service-detail summary {
+  position: relative;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 18px 46px 18px 20px;
+  color: var(--green-dark);
+  font-size: 1.06rem;
+  line-height: 1.35;
+  list-style: none;
+}
+
+.service-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-detail summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent-dark);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.service-detail[open] summary::after {
+  content: "-";
+}
+
+.service-detail p {
+  padding: 0 20px 20px;
+}
+
 .status-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1000,11 +1044,14 @@ body {
 
 .eyebrow {
   display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 4px 10px;
   border: 1px solid rgba(255, 255, 255, 0.34);
   background: rgba(255, 255, 255, 0.14);
   color: #fff;
   font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .city-hero h1 {
@@ -1012,12 +1059,14 @@ body {
   font-size: clamp(2rem, 4.8vw, 3.25rem);
   line-height: 1.24;
   font-weight: 900;
+  overflow-wrap: anywhere;
 }
 
 .city-hero .hero-lead {
   max-width: 780px;
   font-size: 1.1rem;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .city-hero .button {
@@ -1321,7 +1370,21 @@ main.page {
 
 @media (max-width: 640px) {
   .nav {
-    width: min(100% - 24px, 366px);
+    width: min(100% - 18px, 372px);
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    font-size: 0.82rem;
+    white-space: normal;
+    overflow-x: visible;
+    justify-content: flex-start;
+    gap: 10px 10px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
   }
 
   .city-hero .hero-inner {
@@ -1330,12 +1393,25 @@ main.page {
     padding: 34px 0;
   }
 
+  .city-hero .hero-copy,
+  .city-hero .hero-panel {
+    min-width: 0;
+  }
+
+  .city-hero .eyebrow {
+    display: block;
+    width: 100%;
+    word-break: break-all;
+  }
+
   .city-hero h1 {
     font-size: clamp(1.6rem, 7vw, 1.95rem);
+    word-break: break-all;
   }
 
   .city-hero .hero-lead {
     font-size: 0.96rem;
+    word-break: break-all;
   }
 
   .hero-badges,
