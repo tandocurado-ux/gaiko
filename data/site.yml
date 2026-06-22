@@ -1,0 +1,27 @@
+entity_type: portal_media
+business_model: info_only
+domain: https://tandocurado-ux.github.io/gaiko/
+
+operator:
+  name: null
+  legal_name: null
+  address: null
+  phone: null
+  email: null
+  url: null
+
+construction_license:
+  exists: null
+  number: null
+
+supervisor:
+  exists: null
+  name: null
+  title: null
+  profile_url: null
+
+legal:
+  privacy_policy_url: null
+  advertising_policy_url: null
+  terms_url: null
+  disclaimer_url: null
