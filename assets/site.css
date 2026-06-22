@@ -84,7 +84,7 @@ img {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(24, 35, 33, 0.7), rgba(24, 35, 33, 0.28) 48%, rgba(24, 35, 33, 0.04)),
-    url("hero-exterior.png") center / cover no-repeat;
+    url("hero-exterior.jpg") center / cover no-repeat;
   color: #fff;
 }
 
@@ -367,6 +367,10 @@ details p {
 .small {
   color: #95a69f;
   font-size: 0.9rem;
+}
+
+.credit a {
+  color: #dce6df;
 }
 
 @media (max-width: 860px) {
