@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tandocurado-ux.github.io/gaiko/sitemap.xml

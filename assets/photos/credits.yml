@@ -1,0 +1,16 @@
+photos:
+  - file: exterior-concrete-finish.jpg
+    title: IMG_0550
+    creator: jessicafm
+    source_url: https://www.flickr.com/photos/94953676@N00/73018202
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0/
+    local_path: /assets/photos/exterior-concrete-finish.jpg
+    width: 1600
+    height: 900
+    use: hero/example
+    alt: コンクリート舗装と住宅外構のイメージ写真
+    edits:
+      - resized_to_1600x900
+      - slight_dark_overlay_in_css
+    note: 豊中市の施工実績や当サイト運営者の施工写真ではありません。

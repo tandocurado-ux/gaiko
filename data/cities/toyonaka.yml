@@ -1,0 +1,131 @@
+pref_slug: osaka
+city_slug: toyonaka
+city_name: 豊中市
+page_url: https://tandocurado-ux.github.io/gaiko/osaka/toyonaka/
+date_modified: 2026-06-22
+verified_date: 2026-06-22
+region_type: urban
+
+quality_gate:
+  confirmed_fact_count: 11
+  toyonaka_specific_faq_count: 5
+  visible_todos: false
+  internal_links_to_unbuilt_pages: false
+  photo_policy: real_local_photos_only
+
+local_context:
+  - label: 千里ニュータウン
+    summary: 市東部から吹田市にまたがる千里丘陵に大阪府が開発したニュータウンで、面積は1,160ha、うち豊中市域は369ha。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/senrinyutaunsaisei/index.html
+    source_line_note: "千里ニュータウンとは"
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - label: 千里ニュータウン豊中市域の人口推移
+    summary: 豊中市域は1975年に約4万3千人、2005年に約2万8千人まで減少し、2015年に約3万5千人まで回復。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/senrinyutaunsaisei/index.html
+    source_line_note: "人口推移と建替えの動き"
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - label: 都市景観形成マスタープラン
+    summary: 豊中市は2014年に都市景観形成マスタープランを策定し、2024年4月1日に改定版を運用開始。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/toshikeikan/a001110040010.html
+    source_line_note: "都市景観形成マスタープラン"
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - label: 景観計画区域の届出制度
+    summary: 景観計画区域の行為は、法令等の申請手続き前に景観面の協議を行う制度として案内されている。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/toshikeikan/kaihatsu01.html
+    source_line_note: "景観計画区域における行為の届出制度"
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - label: 地区計画の届出
+    summary: 地区整備計画のある区域で一定の行為をする場合は、着手30日前までの届出が必要。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/kenchiku_kaihatsu/tikukeikakutodokede.html
+    source_line_note: "地区計画"
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - label: 建築協定地区
+    summary: 豊中市には9か所の建築協定地区がある。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/kenchiku_kaihatsu/kentikukyotei.html
+    source_line_note: "建築協定地区"
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - label: 住宅・建設統計
+    summary: 令和7年豊中市統計書の第9章に、住宅数、所有関係、建て方別専用住宅数、道路、公園などの表がある。
+    source_url: https://www.city.toyonaka.osaka.jp/joho/toukei_joho/toukeisho/tokei/R7_toukeisho.html
+    source_line_note: "第9章 建設および住宅"
+    verified_date: 2026-06-22
+    confidence: confirmed
+
+subsidies:
+  hedge_and_roadside_greening:
+    exists: true
+    name: 生垣緑化・沿道緑化助成金
+    amount:
+      hedge: 設置費用の4/5
+      roadside_greening: 設置費用の1/2
+      cap_yen: 100000
+    target:
+      - 豊中市内の住宅用地または事業所用地等の民有地
+      - 道路に面し、外部から容易に眺望できる生垣または沿道緑化
+      - 生垣延長2m以上、樹木高さ原則1m以上、5年以上保存・育成管理
+    application_timing: 設置前に申込み
+    fiscal_year: null
+    fiscal_year_note: 公式ページに年度明記は未確認。補助・助成金一覧は2026年4月10日更新、申込書ページは2024年4月15日更新。
+    source_url: https://www.city.toyonaka.osaka.jp/kurashi/moushikomi/soshiki/moushikomi4/ikegaki.html
+    related_source_url: https://www.city.toyonaka.osaka.jp/machi/hojo_joseikin/ikegakiryokatou_jyo.html
+    verified_date: 2026-06-22
+    confidence: confirmed
+  block_wall_removal:
+    exists: null
+    name: ブロック塀撤去等補助
+    amount: null
+    fiscal_year: null
+    source_url: https://www.city.toyonaka.osaka.jp/machi/kenchiku_kaihatsu/blocknotenken.html
+    verified_date: 2026-06-22
+    confidence: unconfirmed
+    public_note: 公式に確認できたのは所有者向け安全点検・危険時の専門家相談・撤去補修依頼の案内。補助上限額は未確認。
+  rainwater_tank:
+    exists: null
+    name: 雨水貯留タンク等助成
+    amount: null
+    fiscal_year: null
+    source_url: null
+    verified_date: 2026-06-22
+    confidence: unconfirmed
+    public_note: 豊中市公式の対象制度・上限額を未確認。
+
+safety_and_rules:
+  block_wall:
+    summary: 2018年6月18日の大阪府北部地震でブロック塀倒壊による被害があり、豊中市は所有者責任で点検し、危険時は注意表示と専門家への相談、撤去・補修を求めている。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/kenchiku_kaihatsu/blocknotenken.html
+    verified_date: 2026-06-22
+    confidence: confirmed
+  district_plan:
+    summary: 地区計画区域内の一定行為は、着手30日前までの届出が必要。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/kenchiku_kaihatsu/tikukeikakutodokede.html
+    verified_date: 2026-06-22
+    confidence: confirmed
+  landscape_notification:
+    summary: 景観計画区域内の行為届出制度があり、都市計画課窓口、郵送、オンラインで手続き可能。
+    source_url: https://www.city.toyonaka.osaka.jp/machi/toshikeikan/kaihatsu01.html
+    verified_date: 2026-06-22
+    confidence: confirmed
+
+photo_assets:
+  - file: /assets/photos/exterior-concrete-finish.jpg
+    source_url: https://www.flickr.com/photos/94953676@N00/73018202
+    license_url: https://creativecommons.org/licenses/by/2.0/
+    credit: IMG_0550 by jessicafm
+    use: hero/example
+    alt: コンクリート舗装と住宅外構のイメージ写真
+    width: 1600
+    height: 900
+    confidence: confirmed
+    note: 豊中市の施工実績写真ではなく、外構仕上げのイメージ写真。
+
+unconfirmed_items:
+  - ブロック塀撤去補助の有無・上限額・受付年度
+  - 雨水貯留タンク等助成の有無・上限額・受付年度
+  - 工事種別ごとの追加写真素材
+  - 住宅統計Excelからの実数抽出
