@@ -84,7 +84,7 @@ img {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(24, 35, 33, 0.7), rgba(24, 35, 33, 0.28) 48%, rgba(24, 35, 33, 0.04)),
-    url("hero-exterior.jpg") center / cover no-repeat;
+    url("photos/exterior-concrete-finish.jpg") center / cover no-repeat;
   color: #fff;
 }
 
@@ -938,5 +938,424 @@ details p {
 
   .numbered-toc ol {
     columns: 1;
+  }
+}
+
+/* Toyonaka city page: layout aligned to the referenced regional guide format. */
+:root {
+  --accent: #d76022;
+  --accent-dark: #a84619;
+  --guide-bg: #f5f2ee;
+}
+
+body {
+  background: var(--guide-bg);
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: none;
+}
+
+.nav {
+  width: min(1160px, calc(100% - 28px));
+}
+
+.brand {
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
+.nav-links {
+  gap: 14px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.breadcrumb {
+  width: min(1160px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 9px 0;
+}
+
+.city-hero {
+  min-height: auto;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(18, 24, 26, 0.84) 0%, rgba(18, 24, 26, 0.6) 38%, rgba(18, 24, 26, 0.18) 68%, rgba(18, 24, 26, 0.02) 100%),
+    url("photos/exterior-concrete-finish.jpg") center / cover no-repeat;
+}
+
+.city-hero .hero-inner {
+  width: min(1160px, calc(100% - 28px));
+  min-height: 560px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 34px;
+  align-items: center;
+  padding: 64px 0 72px;
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-weight: 800;
+}
+
+.city-hero h1 {
+  max-width: 780px;
+  font-size: clamp(2rem, 4.8vw, 3.25rem);
+  line-height: 1.24;
+  font-weight: 900;
+}
+
+.city-hero .hero-lead {
+  max-width: 780px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.city-hero .button {
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+.city-hero .button.primary {
+  border-color: var(--accent);
+  color: #fff;
+  background: var(--accent);
+}
+
+.hero-badges {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.badge {
+  min-height: 88px;
+  padding: 12px;
+  border: 1px solid rgba(168, 70, 25, 0.2);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  box-shadow: 0 8px 18px rgba(70, 50, 32, 0.08);
+}
+
+.badge b {
+  display: block;
+  color: var(--accent-dark);
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.badge span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.hero-panel {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: #fff;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.hero-panel h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+.quick-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  font-size: 0.94rem;
+}
+
+.quick-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.quick-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.page-shell {
+  width: min(1160px, calc(100% - 28px));
+  margin: 28px auto 80px;
+  display: grid;
+  grid-template-columns: minmax(0, 780px) 320px;
+  gap: 28px;
+  align-items: start;
+}
+
+main.page {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.page-aside {
+  position: sticky;
+  top: 82px;
+  display: grid;
+  gap: 16px;
+}
+
+.side-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.side-card h2 {
+  margin: 0 0 12px;
+  color: var(--accent-dark);
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.side-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.side-list li {
+  position: relative;
+  padding-left: 17px;
+}
+
+.side-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.76em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.side-list a {
+  color: var(--green-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.page .section,
+.page .numbered-toc,
+.page .date-row {
+  width: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.page .section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page .section + .section,
+.page .numbered-toc + .section,
+.page .section + .numbered-toc {
+  margin-top: 52px;
+}
+
+.page .section-header {
+  max-width: none;
+  margin-bottom: 22px;
+}
+
+.page .section-label,
+.numbered-toc .section-label {
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.page .section-header h2,
+.numbered-toc h2 {
+  margin: 0 0 18px;
+  padding: 10px 14px;
+  border-left: 7px solid var(--accent-dark);
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.44rem;
+  line-height: 1.45;
+  font-weight: 900;
+}
+
+.page .section-header p {
+  color: var(--muted);
+}
+
+.numbered-toc {
+  padding: 20px;
+  border-radius: 0;
+  background: #f8f8f8;
+}
+
+.numbered-toc ol {
+  columns: 1;
+  line-height: 1.85;
+}
+
+.numbered-toc span {
+  font-size: 0.9rem;
+}
+
+.page .split-card,
+.page .area-pattern,
+.page .contact-card,
+.page .warning-card,
+.page .system-card,
+.page .process-card,
+.page .material-card,
+.page .keyword-card,
+.page .stat-card,
+.page .fact,
+.page .status-box,
+.page .note,
+.page .table-wrap,
+.page details,
+.page .photo-frame {
+  border-radius: 0;
+}
+
+.page .stat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.page .stat-card {
+  min-height: 128px;
+  padding: 14px;
+}
+
+.page .stat-card strong {
+  color: var(--accent-dark);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.page .split-grid,
+.page .area-pattern-grid,
+.page .contact-grid,
+.page .system-grid,
+.page .material-grid,
+.page .keyword-grid {
+  gap: 12px;
+}
+
+.page .process-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.page .process-card {
+  min-height: 148px;
+}
+
+.page .process-card h3::before {
+  content: "";
+}
+
+.page .cta-band {
+  width: auto;
+  margin: 52px 0 0;
+  border-radius: 0;
+  background: #2d2d2d;
+}
+
+.page .date-row {
+  margin-top: 28px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 980px) {
+  .city-hero .hero-inner,
+  .page-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .page-aside {
+    position: static;
+  }
+
+  .hero-badges,
+  .page .stat-grid,
+  .page .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    width: min(100% - 24px, 366px);
+  }
+
+  .city-hero .hero-inner {
+    width: min(100% - 24px, 366px);
+    min-height: auto;
+    padding: 34px 0;
+  }
+
+  .city-hero h1 {
+    font-size: clamp(1.6rem, 7vw, 1.95rem);
+  }
+
+  .city-hero .hero-lead {
+    font-size: 0.96rem;
+  }
+
+  .hero-badges,
+  .page .stat-grid,
+  .page .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    width: min(100% - 24px, 366px);
+    margin-top: 18px;
+  }
+
+  main.page {
+    padding: 18px 16px 32px;
+  }
+
+  .page .section + .section,
+  .page .numbered-toc + .section,
+  .page .section + .numbered-toc {
+    margin-top: 42px;
   }
 }
