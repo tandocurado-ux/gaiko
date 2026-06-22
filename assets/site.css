@@ -508,6 +508,89 @@ details p {
   font-weight: 700;
 }
 
+.numbered-toc {
+  width: min(1120px, calc(100% - 32px));
+  margin: 34px auto 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.numbered-toc h2 {
+  margin: 0 0 16px;
+  font-size: 1.24rem;
+}
+
+.numbered-toc ol {
+  margin: 0;
+  padding-left: 1.35rem;
+  columns: 2;
+  column-gap: 34px;
+}
+
+.numbered-toc li {
+  break-inside: avoid;
+  margin: 0 0 10px;
+}
+
+.numbered-toc a {
+  color: var(--green-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.numbered-toc span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.stat-card {
+  min-height: 176px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.stat-card strong {
+  display: block;
+  color: var(--clay);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.05;
+}
+
+.stat-card b {
+  display: block;
+  margin: 8px 0 6px;
+  color: var(--green-dark);
+}
+
+.stat-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.stat-card a {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.source-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -659,6 +742,7 @@ details p {
 
 @media (max-width: 920px) {
   .toc,
+  .stat-grid,
   .facts,
   .system-grid,
   .process-grid,
@@ -683,6 +767,8 @@ details p {
   }
 
   .toc,
+  .numbered-toc ol,
+  .stat-grid,
   .facts,
   .example-grid,
   .system-grid,
@@ -691,5 +777,9 @@ details p {
   .keyword-grid,
   .status-row {
     grid-template-columns: 1fr;
+  }
+
+  .numbered-toc ol {
+    columns: 1;
   }
 }
