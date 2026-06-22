@@ -591,6 +591,116 @@ details p {
   font-size: 0.92rem;
 }
 
+.feature-badges {
+  width: min(1120px, calc(100% - 32px));
+  margin: 26px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.feature-badge {
+  min-height: 92px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.feature-badge b,
+.area-pattern b,
+.contact-card b {
+  display: block;
+  color: var(--green-dark);
+}
+
+.feature-badge span,
+.area-pattern span,
+.contact-card span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.split-grid,
+.area-pattern-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.split-card,
+.area-pattern,
+.contact-card,
+.warning-card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.split-card h3,
+.warning-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+.split-card p,
+.warning-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 22px;
+}
+
+.chip {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #cdd7ce;
+  border-radius: 999px;
+  background: #f4f7f2;
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.cta-band {
+  width: min(1120px, calc(100% - 32px));
+  margin: 78px auto;
+  padding: 28px;
+  border-radius: 8px;
+  background: #1f3b31;
+  color: #fff;
+}
+
+.cta-band h2,
+.cta-band p {
+  margin: 0;
+}
+
+.cta-band p {
+  max-width: 780px;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.cta-band .hero-actions {
+  margin-top: 18px;
+}
+
+.warning-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -740,9 +850,26 @@ details p {
   background: #edf3ec;
 }
 
+.top-gap {
+  margin-top: 18px;
+}
+
+.section-gap {
+  margin-top: 28px;
+}
+
+.bottom-gap {
+  margin-bottom: 18px;
+}
+
 @media (max-width: 920px) {
   .toc,
   .stat-grid,
+  .feature-badges,
+  .split-grid,
+  .area-pattern-grid,
+  .contact-grid,
+  .warning-grid,
   .facts,
   .system-grid,
   .process-grid,
@@ -769,6 +896,11 @@ details p {
   .toc,
   .numbered-toc ol,
   .stat-grid,
+  .feature-badges,
+  .split-grid,
+  .area-pattern-grid,
+  .contact-grid,
+  .warning-grid,
   .facts,
   .example-grid,
   .system-grid,
