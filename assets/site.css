@@ -148,9 +148,6 @@ h1 {
   margin: -48px auto 0;
   position: relative;
   z-index: 5;
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: 24px;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -165,6 +162,22 @@ h1 {
 
 .tldr h2 {
   font-size: 1.2rem;
+}
+
+.tldr-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tldr-list li {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f7f5ee;
 }
 
 .tldr strong {
@@ -198,6 +211,13 @@ h1 {
 .section-header {
   max-width: 760px;
   margin-bottom: 26px;
+}
+
+.section-label {
+  margin: 0 0 8px;
+  color: var(--clay);
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .section-header h2 {
@@ -256,7 +276,7 @@ h1 {
 
 table {
   width: 100%;
-  min-width: 760px;
+  min-width: 680px;
   border-collapse: collapse;
 }
 
@@ -548,7 +568,7 @@ details p {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   margin: 22px 0;
 }
@@ -689,6 +709,10 @@ details p {
   max-width: 780px;
   margin-top: 8px;
   color: rgba(255, 255, 255, 0.84);
+}
+
+.cta-band .section-label {
+  color: #d8c28f;
 }
 
 .cta-band .hero-actions {
@@ -895,6 +919,7 @@ details p {
 
   .toc,
   .numbered-toc ol,
+  .tldr-list,
   .stat-grid,
   .feature-badges,
   .split-grid,
