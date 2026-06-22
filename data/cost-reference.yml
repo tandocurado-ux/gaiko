@@ -1,0 +1,36 @@
+updated: 2026-06-22
+currency: JPY
+note: "一般的な目安。敷地条件、施工範囲、素材、地域の職人単価で変動する。"
+items:
+  new_exterior:
+    label: "新築外構一式"
+    range_yen: [500000, 2000000]
+    short_note: "住宅本体価格の約10%を目安に検討"
+  exterior_reform:
+    label: "外構リフォーム"
+    range_yen: [100000, 1000000]
+    short_note: "部分補修から全面刷新まで幅がある"
+  gate_approach:
+    label: "門まわり・アプローチ"
+    range_yen: [100000, 500000]
+    short_note: "門柱、表札、ポスト、照明、舗装で変動"
+  carport_one:
+    label: "カーポート1台"
+    range_yen: [200000, 400000]
+    short_note: "本体、柱位置、屋根材、土間調整で変動"
+  parking_concrete_one:
+    label: "駐車場・土間コンクリート1台"
+    range_yen: [150000, 400000]
+    short_note: "勾配、排水、残土処分、伸縮目地で変動"
+  fence_per_meter:
+    label: "フェンス1m"
+    range_yen: [5000, 60000]
+    short_note: "メッシュ、目隠し、アルミ、樹脂、境界条件で変動"
+  block_wall_per_square_meter:
+    label: "境界ブロック塀1平方メートル"
+    range_yen: [10000, 18000]
+    short_note: "撤去、基礎、控え壁、フェンス併用で変動"
+  garden_planting:
+    label: "植栽・庭づくり"
+    range_yen: [100000, 500000]
+    short_note: "シンボルツリー、生垣、防草、芝張りで変動"
