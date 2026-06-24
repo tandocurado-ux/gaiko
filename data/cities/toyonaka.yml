@@ -332,16 +332,16 @@ safety_and_rules:
     confidence: confirmed
 
 photo_assets:
-  - file: /assets/photos/garden-exterior-hero.jpg
-    source_url: null
-    license_url: null
-    credit: AI-generated no-people garden exterior image
+  - file: /assets/photos/real-exterior-garden-fence.jpg
+    source_url: https://www.flickr.com/photos/24229657@N04/5756265808
+    license_url: https://creativecommons.org/licenses/by/2.0/
+    credit: lifacolor / Flickr
     use: hero/example
-    alt: 植栽とアプローチを整えた庭先外構のイメージ画像
-    width: 1672
-    height: 941
+    alt: フェンス、植栽、住宅外観を含む人物なしのエクステリア外構写真
+    width: 1024
+    height: 768
     confidence: confirmed
-    note: 豊中市の施工実績写真ではなく、人が写らない庭先外構のイメージ画像。
+    note: 豊中市の施工実績写真ではなく、人が写らないエクステリア外構の実写真。
 
 unconfirmed_items:
   - 雨水貯留タンク等助成の有無・上限額・受付年度

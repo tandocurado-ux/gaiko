@@ -1,19 +1,4 @@
 photos:
-  - file: garden-exterior-hero.jpg
-    title: 人が写らない庭先外構のイメージ画像
-    creator: OpenAI image generation
-    source_url: null
-    license: project-generated
-    license_url: null
-    local_path: /assets/photos/garden-exterior-hero.jpg
-    width: 1672
-    height: 941
-    use: hero/example
-    alt: 植栽とアプローチを整えた庭先外構のイメージ画像
-    edits:
-      - generated_for_no_people_hero
-      - dark_overlay_in_css
-    note: 豊中市の施工実績や当サイト運営者の施工写真ではありません。
   - file: exterior-concrete-finish.jpg
     title: IMG_0550
     creator: jessicafm
@@ -29,3 +14,18 @@ photos:
       - resized_to_1600x900
       - slight_dark_overlay_in_css
     note: 豊中市の施工実績や当サイト運営者の施工写真ではありません。
+  - file: real-exterior-garden-fence.jpg
+    title: Flickr exterior garden and fence photo
+    creator: lifacolor
+    source_url: https://www.flickr.com/photos/24229657@N04/5756265808
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0/
+    local_path: /assets/photos/real-exterior-garden-fence.jpg
+    width: 1024
+    height: 768
+    use: hero/example
+    alt: フェンス、植栽、住宅外観を含む人物なしのエクステリア外構写真
+    edits:
+      - downloaded_from_openverse_indexed_flickr_source
+      - dark_overlay_in_css
+    note: 大阪府の施工実績や当サイト運営者の施工写真ではありません。

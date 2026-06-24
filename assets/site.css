@@ -89,7 +89,7 @@ img {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(24, 35, 33, 0.7), rgba(24, 35, 33, 0.28) 48%, rgba(24, 35, 33, 0.04)),
-    url("photos/garden-exterior-hero.jpg") center / cover no-repeat;
+    url("photos/real-exterior-garden-fence.jpg") center / cover no-repeat;
   color: #fff;
 }
 
@@ -479,7 +479,7 @@ details p {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(18, 31, 27, 0.8), rgba(18, 31, 27, 0.46) 48%, rgba(18, 31, 27, 0.18)),
-    url("photos/garden-exterior-hero.jpg") center / cover no-repeat;
+    url("photos/real-exterior-garden-fence.jpg") center / cover no-repeat;
 }
 
 .city-hero .hero-inner {
@@ -1046,13 +1046,13 @@ body {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(12, 38, 27, 0.86) 0%, rgba(16, 58, 36, 0.62) 38%, rgba(21, 84, 50, 0.18) 68%, rgba(21, 84, 50, 0.02) 100%),
-    url("photos/garden-exterior-hero.jpg") center / cover no-repeat;
+    url("photos/real-exterior-garden-fence.jpg") center / cover no-repeat;
 }
 
 .osaka-prefecture .city-hero {
   background:
     linear-gradient(90deg, rgba(12, 38, 27, 0.88) 0%, rgba(16, 58, 36, 0.68) 42%, rgba(21, 84, 50, 0.24) 72%, rgba(21, 84, 50, 0.06) 100%),
-    url("photos/garden-exterior-hero.jpg") center / cover no-repeat;
+    url("photos/real-exterior-garden-fence.jpg") center / cover no-repeat;
 }
 
 .city-hero .hero-inner {

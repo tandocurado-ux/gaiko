@@ -5,7 +5,7 @@ const ROOT = path.resolve(__dirname, "..");
 const SITE_URL = "https://tandocurado-ux.github.io/gaiko";
 const BRAND = "エクステリア外構工事地域相談窓口Coooi";
 const DATE = "2026-06-24";
-const HERO_IMAGE = `${SITE_URL}/assets/photos/garden-exterior-hero.jpg`;
+const HERO_IMAGE = `${SITE_URL}/assets/photos/real-exterior-garden-fence.jpg`;
 
 const guides = [
   "guide/gaiko-estimate/",
