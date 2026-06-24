@@ -1415,6 +1415,10 @@ main.page {
     white-space: nowrap;
   }
 
+  .city-nav-links {
+    display: none;
+  }
+
   .city-hero {
     padding-inline: 16px;
   }
