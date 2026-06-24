@@ -2,7 +2,7 @@ pref_slug: osaka
 city_slug: toyonaka
 city_name: 豊中市
 page_url: https://tandocurado-ux.github.io/gaiko/osaka/toyonaka/
-date_modified: 2026-06-22
+date_modified: 2026-06-24
 verified_date: 2026-06-22
 region_type: urban
 
@@ -11,7 +11,7 @@ quality_gate:
   toyonaka_specific_faq_count: 5
   visible_todos: false
   internal_links_to_unbuilt_pages: false
-  photo_policy: real_local_photos_only
+  photo_policy: no_people_garden_image_only
 
 local_context:
   - label: 千里ニュータウン
@@ -332,16 +332,16 @@ safety_and_rules:
     confidence: confirmed
 
 photo_assets:
-  - file: /assets/photos/exterior-concrete-finish.jpg
-    source_url: https://www.flickr.com/photos/94953676@N00/73018202
-    license_url: https://creativecommons.org/licenses/by/2.0/
-    credit: IMG_0550 by jessicafm
+  - file: /assets/photos/garden-exterior-hero.jpg
+    source_url: null
+    license_url: null
+    credit: AI-generated no-people garden exterior image
     use: hero/example
-    alt: コンクリート舗装と住宅外構のイメージ写真
-    width: 1600
-    height: 900
+    alt: 植栽とアプローチを整えた庭先外構のイメージ画像
+    width: 1672
+    height: 941
     confidence: confirmed
-    note: 豊中市の施工実績写真ではなく、外構仕上げのイメージ写真。
+    note: 豊中市の施工実績写真ではなく、人が写らない庭先外構のイメージ画像。
 
 unconfirmed_items:
   - 雨水貯留タンク等助成の有無・上限額・受付年度
