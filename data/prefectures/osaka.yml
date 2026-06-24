@@ -1,0 +1,212 @@
+meta:
+  slug: osaka
+  name: 大阪府
+  page_url: https://tandocurado-ux.github.io/gaiko/osaka/
+  date_modified: 2026-06-24
+  verified_date: 2026-06-24
+
+quality_gate:
+  page_type: prefecture
+  confirmed_fact_count: 14
+  visible_todos: false
+  unverified_subsidies_are_marked: true
+  photo_policy: real_photo_only_not施工実績
+
+climate:
+  station: 大阪
+  station_note: 気象庁「大阪（大阪府）」1991-2020年平年値
+  annual_precip_mm:
+    value: 1338.3
+    source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=62&block_no=47772&year=&month=&day=&view=p1
+    verified_date: 2026-06-24
+    confidence: confirmed
+  hot_days_over30:
+    value: 74.9
+    unit: 日
+    note: 日最高気温30.0℃以上
+    source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=62&block_no=47772&year=&month=&day=&view=a2
+    verified_date: 2026-06-24
+    confidence: confirmed
+  hot_days_over35:
+    value: 14.5
+    unit: 日
+    note: 日最高気温35.0℃以上
+    source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=62&block_no=47772&year=&month=&day=&view=a2
+    verified_date: 2026-06-24
+    confidence: confirmed
+  max_snow_depth_cm:
+    value: 1
+    note: 年平年値。各階級別の日数では最深積雪1cm以上が0.7日、5cm以上が0.2日。
+    source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=62&block_no=47772&year=&month=&day=&view=a4
+    verified_date: 2026-06-24
+    confidence: confirmed
+  annual_snowfall_cm:
+    value: 1
+    source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=62&block_no=47772&year=&month=&day=&view=p1
+    verified_date: 2026-06-24
+    confidence: confirmed
+  strong_wind_days_over10ms:
+    value: 16.4
+    unit: 日
+    note: 日最大風速10.0m/s以上
+    source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=62&block_no=47772&year=&month=&day=&view=a3
+    verified_date: 2026-06-24
+    confidence: confirmed
+
+housing_vehicle:
+  ownership_rate:
+    osaka_value: 54.1
+    national_value: 60.5
+    unit: "%"
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: 大阪府は専用住宅4,148,300戸のうち持ち家2,246,100戸。全国は専用住宅54,893,100戸のうち持ち家33,208,800戸。
+    verified_date: 2026-06-24
+    confidence: confirmed
+  detached_ratio:
+    osaka_value: 39.3
+    national_value: 52.2
+    unit: "%"
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: 大阪府は専用住宅4,148,300戸のうち一戸建1,631,600戸。全国は専用住宅54,893,100戸のうち一戸建28,645,300戸。
+    verified_date: 2026-06-24
+    confidence: confirmed
+  floor_area_per_dwelling:
+    osaka_value: 74.97
+    national_value: 90.86
+    unit: 平方メートル
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: 一住宅当たり延べ面積。敷地面積ではないため、ページでは「住宅面積」として扱う。
+    verified_date: 2026-06-24
+    confidence: confirmed
+  land_area_per_dwelling:
+    value: null
+    unit: 平方メートル
+    source: null
+    confidence: unconfirmed
+    public_note: 同一出典で府・全国比較できる敷地面積を確認できるまで「—」とする。
+  cars_per_household:
+    osaka_value: 0.611
+    national_value: 1.009
+    rank_note: 東京に次いで全国2番目に低い
+    unit: 台/世帯
+    source: 自動車検査登録情報協会「令和7年 自家用乗用車の世帯当たり普及台数」
+    source_url: https://www.airia.or.jp/publish/file/kenbetsu2025.pdf
+    landing_url: https://www.airia.or.jp/publish/statistics/mycar.html
+    survey_date: 2025-03-31
+    household_date: 2025-01-01
+    verified_date: 2026-06-24
+    confidence: confirmed
+  new_housing_starts:
+    value: null
+    unit: 戸
+    source: null
+    confidence: unconfirmed
+    public_note: 建築着工統計の大阪府値を同一年次で確認後に追加する。
+  land_price_note:
+    value: null
+    source: null
+    confidence: unconfirmed
+    public_note: 地価公示・地価調査の代表指標を定義後に追加する。
+
+subsidy_map:
+  - city: toyonaka
+    city_name: 豊中市
+    block_wall: 上限20万円（工事費4/5、または13,000円/平方メートル×面積の4/5）
+    hedge: 上限10万円（生垣は4/5、沿道緑化は1/2）
+    other: 景観計画区域、地区計画、建築協定地区を公式確認
+    source_url: https://www.city.toyonaka.osaka.jp/machi/kenchiku_kaihatsu/taisin/cbhojo.html
+    hedge_source_url: https://www.city.toyonaka.osaka.jp/kurashi/moushikomi/soshiki/moushikomi4/ikegaki.html
+    verified_date: 2026-06-22
+    confidence: confirmed
+  - city: osaka
+    city_name: 大阪市
+    block_wall: null
+    hedge: null
+    other: null
+    source_url: https://www.city.osaka.lg.jp/
+    verified_date: 2026-06-24
+    confidence: unconfirmed
+    public_note: 公式トップは確認済み。対象制度・上限額は未確認のため「—／要確認」。
+  - city: sakai
+    city_name: 堺市
+    block_wall: null
+    hedge: null
+    other: null
+    source_url: https://www.city.sakai.lg.jp/
+    verified_date: 2026-06-24
+    confidence: unconfirmed
+    public_note: 公式トップは確認済み。対象制度・上限額は未確認のため「—／要確認」。
+  - city: suita
+    city_name: 吹田市
+    block_wall: null
+    hedge: null
+    other: null
+    source_url: https://www.city.suita.osaka.jp/
+    verified_date: 2026-06-24
+    confidence: unconfirmed
+    public_note: 公式トップは確認済み。対象制度・上限額は未確認のため「—／要確認」。
+  - city: takatsuki
+    city_name: 高槻市
+    block_wall: null
+    hedge: null
+    other: null
+    source_url: https://www.city.takatsuki.osaka.jp/
+    verified_date: 2026-06-24
+    confidence: unconfirmed
+    public_note: 公式トップは確認済み。対象制度・上限額は未確認のため「—／要確認」。
+  - city: hirakata
+    city_name: 枚方市
+    block_wall: null
+    hedge: null
+    other: null
+    source_url: https://www.city.hirakata.osaka.jp/
+    verified_date: 2026-06-24
+    confidence: unconfirmed
+    public_note: 公式トップは確認済み。対象制度・上限額は未確認のため「—／要確認」。
+
+region_blocks:
+  - name: 大阪市内
+    note: 超狭小地、省スペース、オープン外構、駐輪と宅配ボックスの納まりが中心。
+    municipalities: [大阪市]
+  - name: 北摂
+    note: 千里ニュータウンや丘陵住宅地の経年外構、既存塀、植栽、勾配確認。
+    municipalities: [豊中市, 吹田市, 池田市, 箕面市, 茨木市, 高槻市, 摂津市, 島本町]
+  - name: 北河内
+    note: 京阪沿線の住宅密集地と生駒山地側の高低差で、駐車動線と排水が変わる。
+    municipalities: [枚方市, 寝屋川市, 守口市, 門真市, 大東市, 四條畷市, 交野市]
+  - name: 中河内
+    note: 市街地、工業地域近接、山手側の坂で、搬入・目隠し・土留めの確認が必要。
+    municipalities: [東大阪市, 八尾市, 柏原市]
+  - name: 南河内
+    note: 郊外戸建てと一部傾斜地。庭の省管理化、駐車場拡張、擁壁まわりを確認。
+    municipalities: [松原市, 羽曳野市, 藤井寺市, 富田林市, 河内長野市, 大阪狭山市, 太子町, 河南町, 千早赤阪村]
+  - name: 堺・泉北
+    note: 政令市の市街地、泉北ニュータウン、沿岸寄りで素材耐候性が分かれる。
+    municipalities: [堺市, 和泉市, 高石市, 泉大津市, 忠岡町]
+  - name: 泉南
+    note: 岸和田以南の沿岸・山手混在。塩害、強風、庭木、傾斜、排水を分けて確認。
+    municipalities: [岸和田市, 貝塚市, 熊取町, 泉佐野市, 田尻町, 泉南市, 阪南市, 岬町]
+
+photo_assets:
+  - file: /assets/photos/exterior-concrete-finish.jpg
+    source_url: https://www.flickr.com/photos/94953676@N00/73018202
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0/
+    credit: jessicafm
+    use: hero/example
+    alt: コンクリート舗装と住宅外構の施工イメージ写真
+    width: 1600
+    height: 900
+    note: 大阪府の施工実績や当サイト運営者の施工写真ではありません。
+
+unconfirmed_items:
+  - 主要市のブロック塀撤去補助・生垣助成・雨水等助成の上限額
+  - 建築着工統計の大阪府新設住宅着工戸数
+  - 地価公示・地価調査の代表指標
+  - 府・全国比較できる一住宅あたり敷地面積

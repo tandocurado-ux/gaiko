@@ -1203,7 +1203,9 @@ ${urls
 function main() {
   const osakaDir = path.join(ROOT, "osaka");
   fs.mkdirSync(osakaDir, { recursive: true });
-  fs.writeFileSync(path.join(osakaDir, "index.html"), osakaIndexPage(), "utf8");
+  if (process.env.REBUILD_OSAKA_DIRECTORY === "1") {
+    fs.writeFileSync(path.join(osakaDir, "index.html"), osakaIndexPage(), "utf8");
+  }
 
   for (const city of cities) {
     if (city.existing) continue;
