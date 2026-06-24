@@ -1,0 +1,207 @@
+meta:
+  slug: hokkaido
+  name: 北海道
+  page_url: https://tandocurado-ux.github.io/gaiko/hokkaido/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+
+quality_gate:
+  page_type: prefecture
+  confirmed_fact_count: 20
+  visible_todos: false
+  unverified_subsidies_are_marked: true
+  photo_policy: real_photo_no_people_not施工実績
+  publish_floor_met:
+    climate_normals: true
+    housing_vehicle: true
+    subsidy_map_official_city_checks: 4
+    building_spec_vertical_snow_or_frost: true
+    material_or_regulation_or_disaster_confirmed: true
+
+climate:
+  station_set:
+    - station: 札幌
+      area: 石狩地方
+      source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=14&block_no=47412&year=&month=&day=&view=p1
+      annual_precip_mm: 1146.1
+      avg_temp_c: 9.2
+      annual_snowfall_cm: 479
+      max_snow_depth_cm: 97
+      verified_date: 2026-06-25
+      confidence: confirmed
+    - station: 旭川
+      area: 上川地方
+      source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=p1
+      annual_precip_mm: 1104.4
+      avg_temp_c: 7.2
+      annual_snowfall_cm: 557
+      max_snow_depth_cm: 89
+      verified_date: 2026-06-25
+      confidence: confirmed
+    - station: 岩見沢
+      area: 空知地方
+      source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=15&block_no=47413&year=&month=&day=&view=p1
+      annual_precip_mm: 1248.5
+      avg_temp_c: 7.9
+      annual_snowfall_cm: 664
+      max_snow_depth_cm: 120
+      verified_date: 2026-06-25
+      confidence: confirmed
+    - station: 釧路
+      area: 釧路地方
+      source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=19&block_no=47418&year=&month=&day=&view=p1
+      annual_precip_mm: 1080.1
+      avg_temp_c: 6.7
+      annual_snowfall_cm: 127
+      max_snow_depth_cm: 34
+      verified_date: 2026-06-25
+      confidence: confirmed
+    - station: 帯広
+      area: 十勝地方
+      source_url: https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=20&block_no=47417&year=&month=&day=&view=p1
+      annual_precip_mm: 919.7
+      avg_temp_c: 7.2
+      annual_snowfall_cm: 198
+      max_snow_depth_cm: 71
+      verified_date: 2026-06-25
+      confidence: confirmed
+
+building_spec:
+  - jurisdiction: 札幌市
+    topic: 積雪荷重・垂直積雪量
+    source: 札幌市建築基準法施行細則 第21条
+    source_url: https://www.city.sapporo.jp/ncms/reiki/d1w_reiki/H335902100033/H335902100033_j.html
+    confirmed_values:
+      multi_snow_area: 本市全域を多雪区域とする
+      snow_load: 積雪量1cmごとに1平方メートルにつき30N以上
+      vertical_snow_depth_general_m: 1.4
+      vertical_snow_depth_minami_selected_m: 1.9
+      minami_selected_area_note: 南区の小金湯、定山渓温泉東・西、定山渓、豊滝
+    verified_date: 2026-06-25
+    confidence: confirmed
+  - jurisdiction: 北海道内各市町村
+    topic: 凍結深度・基礎根入れ
+    source: 市町村・確認検査機関・設計者確認
+    source_url: null
+    public_note: 道内でも地域差が大きいため、ページでは数値を断定せず、工事場所ごとに確認する扱い。
+    confidence: unconfirmed
+
+housing_vehicle:
+  ownership_rate:
+    hokkaido_value: 56.6
+    national_value: 60.5
+    unit: "%"
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: 北海道は専用住宅2,384,100戸のうち持ち家1,348,300戸。全国は専用住宅54,893,100戸のうち持ち家33,208,800戸。
+    verified_date: 2026-06-25
+    confidence: confirmed
+  detached_ratio:
+    hokkaido_value: 51.4
+    national_value: 52.2
+    unit: "%"
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: 北海道は専用住宅2,384,100戸のうち一戸建1,225,200戸。
+    verified_date: 2026-06-25
+    confidence: confirmed
+  floor_area_per_dwelling:
+    hokkaido_value: 90.75
+    national_value: 90.86
+    unit: 平方メートル
+    source: 令和5年住宅・土地統計調査 第10-4表
+    source_url: https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040209867&fileKind=0
+    survey_year: 2023
+    note: 一住宅当たり延べ面積。敷地面積ではないため、ページでは住宅規模の参考値として扱う。
+    verified_date: 2026-06-25
+    confidence: confirmed
+  cars_per_household:
+    hokkaido_value: 0.986
+    national_value: 1.009
+    unit: 台/世帯
+    source: 自動車検査登録情報協会「令和7年 自家用乗用車の世帯当たり普及台数」
+    source_url: https://www.airia.or.jp/publish/file/kenbetsu2025.pdf
+    landing_url: https://www.airia.or.jp/publish/statistics/mycar.html
+    survey_date: 2025-03-31
+    household_date: 2025-01-01
+    verified_date: 2026-06-25
+    confidence: confirmed
+
+subsidy_map:
+  - city: sapporo
+    city_name: 札幌市
+    block_wall: 撤去工事費の2分の1、前面道路に面する長さ×13,000円、10万円のいずれか低い額以内
+    snow_melting: 公式FAQに融雪施設設置補助の項目あり。制度の有無・年度条件は契約前確認。
+    source_url: https://www.city.sapporo.jp/toshi/k-shido/taishin/blockwall.html
+    search_url: https://search2.city.sapporo.jp/search/?q=%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E5%A1%80+%E8%A3%9C%E5%8A%A9
+    verified_date: 2026-06-25
+    confidence: confirmed
+  - city: asahikawa
+    city_name: 旭川市
+    block_wall: null
+    snow_melting: null
+    source_url: https://www.city.asahikawa.hokkaido.jp/searchresult.html?q=%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E5%A1%80%20%E8%A3%9C%E5%8A%A9
+    verified_date: 2026-06-25
+    confidence: unconfirmed
+    public_note: 公式サイト内検索で外構向けブロック塀撤去補助の該当ページは未確認のため「—／要確認」。
+  - city: hakodate
+    city_name: 函館市
+    block_wall: null
+    snow_melting: null
+    source_url: https://www.city.hakodate.hokkaido.jp/search.html?keyword=%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E5%A1%80%20%E8%A3%9C%E5%8A%A9
+    verified_date: 2026-06-25
+    confidence: unconfirmed
+    public_note: 公式サイト内検索で外構向けブロック塀撤去補助の該当ページは未確認のため「—／要確認」。
+  - city: obihiro
+    city_name: 帯広市
+    block_wall: null
+    snow_melting: null
+    source_url: https://obihiro.ficsc.info/obihiro/search.htm?key=%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E5%A1%80%20%E8%A3%9C%E5%8A%A9
+    verified_date: 2026-06-25
+    confidence: unconfirmed
+    public_note: 公式サイト内検索では予算資料などが中心で、外構向け制度は未確認のため「—／要確認」。
+
+local_materials:
+  - name: 札幌軟石
+    source_url: https://www.city.sapporo.jp/toshokan/sapporosiryo/201606nansekitenji.html
+    support_url: https://www.city.sapporo.jp/shimin/bunkazai/rekibunkanrenbunkazai.html
+    note: 札幌市公式ページで、支笏溶結凝灰岩であり、加工性、耐火・断熱性、明治期以降の街づくりへの貢献が紹介されている。
+    exterior_note: 外構で使う場合は凍害、吸水、表面保護、除雪機接触、滑りを施工者に確認する。
+    verified_date: 2026-06-25
+    confidence: confirmed
+  - name: 寒冷地植栽・防風植栽
+    source_url: null
+    note: 地域差が大きいため樹種名は断定せず、耐寒性、雪囲い、落雪動線、除雪幅を確認する扱い。
+    confidence: unconfirmed
+
+regulations:
+  - topic: 建築物・敷地に関する制限の調査
+    source_url: https://www.city.sapporo.jp/toshi/k-shido/kenchikukakunin/chosa.html
+    note: 札幌市公式で建築物・敷地の制限調査、法・条例に基づく区域の指定等への導線を確認。
+    verified_date: 2026-06-25
+    confidence: confirmed
+
+cost_factors_local:
+  - 耐雪カーポート、屋根雪、雪庇、落雪位置、雪置き場
+  - 凍上を避ける基礎根入れ、土間下地、排水、融雪設備
+  - 除雪機・ロードヒーティング・融雪槽まわりのメンテナンス
+  - 海沿いの塩害、内陸の寒暖差、丘陵地の擁壁・高低差
+
+photo_assets:
+  - file: /assets/photos/real-exterior-garden-fence.jpg
+    source_url: https://www.flickr.com/photos/24229657@N04/5756265808
+    license: CC BY 2.0
+    license_url: https://creativecommons.org/licenses/by/2.0/
+    credit: lifacolor
+    use: hero/example
+    alt: フェンス、植栽、住宅外観を含む人物なしのエクステリア外構写真
+    width: 1024
+    height: 768
+    note: 北海道の施工実績や当サイト運営者の施工写真ではありません。
+
+unconfirmed_items:
+  - 札幌市以外の主要市における外構向けブロック塀撤去補助・融雪施設助成の年度別上限額
+  - 北海道内各市町村の凍結深度・基礎根入れの数値
+  - 市町村別の景観地区、地区計画、がけ・擁壁関連の個別条件

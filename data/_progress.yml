@@ -1,0 +1,86 @@
+meta:
+  updated_at: 2026-06-25
+  governance:
+    - 外構・エクステリア地域ポータル 構築プロンプト v3
+    - 県ページ構築プロンプト
+    - 県ページ 地域特化コンテンツ 深掘り版
+
+guides_done:
+  - slug: gaiko-estimate
+    path: /guide/gaiko-estimate/
+    title: 外構見積もりの見方
+    status: published
+  - slug: choose-contractor
+    path: /guide/choose-contractor/
+    title: 外構業者の選び方
+    status: published
+  - slug: product-select
+    path: /guide/product-select/
+    title: 設備・製品の選び方
+    status: published
+  - slug: boundary-neighbor
+    path: /guide/boundary-neighbor/
+    title: 境界・近隣トラブルの備え
+    status: published
+  - slug: hm-vs-pro-cost
+    path: /guide/hm-vs-pro-cost/
+    title: HM経由と外構専門店の違い
+    status: published
+  - slug: after-construction
+    path: /guide/after-construction/
+    title: 施工後の不具合と対処
+    status: published
+
+guides_pending:
+  - slug: snow-carport
+    title: 耐雪カーポートの選び方
+    status: not_created
+  - slug: wind-resistant-carport
+    title: 耐風カーポートの選び方
+    status: not_created
+  - slug: salt-damage-materials
+    title: 塩害に強い外構素材
+    status: not_created
+  - slug: frost-heave-foundation
+    title: 凍上対策と基礎
+    status: not_created
+  - slug: retaining-wall-cliff
+    title: 擁壁とがけ条例
+    status: not_created
+  - slug: landscape-district-exterior
+    title: 景観地区の外構
+    status: not_created
+
+prefectures:
+  hokkaido:
+    status: published
+    path: /hokkaido/
+    page_url: https://tandocurado-ux.github.io/gaiko/hokkaido/
+    published_at: 2026-06-25
+    verified_at: 2026-06-25
+    commit_policy: one_prefecture_one_commit
+    quality_floor:
+      climate_normals: confirmed
+      housing_vehicle: confirmed
+      subsidy_city_checks: 4
+      building_spec: confirmed_vertical_snow_sapporo
+      local_material: confirmed_sapporo_soft_stone
+  osaka:
+    status: published
+    path: /osaka/
+    page_url: https://tandocurado-ux.github.io/gaiko/osaka/
+    published_at: 2026-06-24
+
+queue_next:
+  - niigata
+  - chiba
+  - miyazaki
+  - okinawa
+  - nagano
+  - okayama
+  - kagawa
+  - tochigi
+
+notes:
+  - 都道府県ページは公開品質ラインを満たしたものだけ内部リンクとsitemapに追加する。
+  - 未確認の補助金・制度は「—／要確認」とし、金額や対象を推測しない。
