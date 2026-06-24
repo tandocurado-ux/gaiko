@@ -1175,8 +1175,11 @@ main.page {
 .page-aside {
   position: sticky;
   top: 82px;
+  max-height: calc(100vh - 96px);
+  overflow-y: auto;
   display: grid;
   gap: 16px;
+  padding-right: 2px;
 }
 
 .side-card {
@@ -1224,6 +1227,20 @@ main.page {
   color: var(--green-dark);
   font-weight: 800;
   text-decoration: none;
+}
+
+.side-contact-list b,
+.side-contact-list span {
+  display: block;
+}
+
+.side-contact-list b {
+  color: var(--green-dark);
+}
+
+.side-contact-list span {
+  margin-top: 2px;
+  font-size: 0.82rem;
 }
 
 .page .section,
@@ -1364,6 +1381,9 @@ main.page {
 
   .page-aside {
     position: static;
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
   }
 
   .hero-badges,
