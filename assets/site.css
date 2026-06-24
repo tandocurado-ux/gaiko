@@ -339,6 +339,22 @@ tr:last-child td {
   background: var(--surface);
 }
 
+a.region {
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+a.region:hover {
+  border-color: var(--green-dark);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.region-feature {
+  background: #f1f7ed;
+}
+
 .region b {
   display: block;
 }
