@@ -10,7 +10,7 @@ quality_gate:
   confirmed_fact_count: 14
   visible_todos: false
   unverified_subsidies_are_marked: true
-  photo_policy: real_photo_only_not施工実績
+  photo_policy: no_people_exterior_image_not施工実績
 
 climate:
   station: 大阪
@@ -194,15 +194,15 @@ region_blocks:
     municipalities: [岸和田市, 貝塚市, 熊取町, 泉佐野市, 田尻町, 泉南市, 阪南市, 岬町]
 
 photo_assets:
-  - file: /assets/photos/exterior-concrete-finish.jpg
-    source_url: https://www.flickr.com/photos/94953676@N00/73018202
-    license: CC BY 2.0
-    license_url: https://creativecommons.org/licenses/by/2.0/
-    credit: jessicafm
+  - file: /assets/photos/garden-exterior-hero.jpg
+    source_url: null
+    license: project-generated
+    license_url: null
+    credit: OpenAI image generation
     use: hero/example
-    alt: コンクリート舗装と住宅外構の施工イメージ写真
-    width: 1600
-    height: 900
+    alt: 門柱、アプローチ、植栽、フェンスを含む人物なしのエクステリア外構イメージ写真
+    width: 1672
+    height: 941
     note: 大阪府の施工実績や当サイト運営者の施工写真ではありません。
 
 unconfirmed_items:
