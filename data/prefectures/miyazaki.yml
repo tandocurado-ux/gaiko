@@ -1,0 +1,59 @@
+meta:
+  slug: miyazaki
+  name: 宮崎県
+  region: 九州
+  page_url: https://tandocurado-ux.github.io/gaiko/miyazaki/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 台風・強雨・沿岸塩害・日射が外構の耐久性に影響しやすく、排水と耐風を優先したい地域です。
+  top_needs:
+    - 台風時の耐風
+    - 豪雨時の排水
+    - 塩害対策
+    - 暑さと日射対策
+  area_blocks:
+    - name: 宮崎市周辺
+      note: 住宅地の駐車場、目隠し、台風時のフェンス強度を確認します。
+    - name: 都城・内陸
+      note: 車利用、日射、雨水排水、庭管理を整理します。
+    - name: 延岡・日向沿岸
+      note: 塩害、強風、浸水想定を確認します。
+    - name: 県南
+      note: 台風、海風、多雨を踏まえ、金物と排水を重視します。
+  major_areas:
+    - 宮崎市
+    - 都城市
+    - 延岡市
+    - 日向市
+    - 日南市
+    - 小林市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

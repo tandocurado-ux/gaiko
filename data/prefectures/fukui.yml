@@ -1,0 +1,59 @@
+meta:
+  slug: fukui
+  name: 福井県
+  region: 中部
+  page_url: https://tandocurado-ux.github.io/gaiko/fukui/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 日本海側の雪と雨、沿岸部の塩害、嶺北・嶺南の気候差を踏まえて外構を検討したい地域です。
+  top_needs:
+    - 耐雪カーポート
+    - 雪置き場と排水
+    - 海沿いの塩害対策
+    - 凍結しにくいアプローチ
+  area_blocks:
+    - name: 福井・坂井
+      note: 雪処理、駐車場、カーポート、土間排水を一体で考えます。
+    - name: 奥越
+      note: 積雪と凍結を前提に、基礎と除雪動線を確認します。
+    - name: 丹南
+      note: 住宅地の駐車場拡張と庭の管理軽減を重視します。
+    - name: 嶺南
+      note: 海風、塩害、風を踏まえ、金物とフェンスを選びます。
+  major_areas:
+    - 福井市
+    - 坂井市
+    - 越前市
+    - 鯖江市
+    - 敦賀市
+    - 大野市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

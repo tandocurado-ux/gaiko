@@ -1,0 +1,59 @@
+meta:
+  slug: yamanashi
+  name: 山梨県
+  region: 中部
+  page_url: https://tandocurado-ux.github.io/gaiko/yamanashi/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 内陸盆地の暑さ・寒さ、山麓の凍結、高低差、日射を踏まえた外構計画が必要な地域です。
+  top_needs:
+    - 凍結しにくいアプローチ
+    - 日射・西日対策
+    - 高低差と擁壁確認
+    - 駐車場拡張
+  area_blocks:
+    - name: 甲府盆地
+      note: 暑さ、日射、車利用を見て、カーポートと舗装材を選びます。
+    - name: 峡東・峡南
+      note: 傾斜地や農地隣接の敷地では、排水と土留めを先に確認します。
+    - name: 富士北麓
+      note: 寒冷、凍結、積雪を踏まえ、滑りにくさと基礎を重視します。
+    - name: 北杜・八ヶ岳周辺
+      note: 寒冷、風、別荘地の管理性を見て素材を決めます。
+  major_areas:
+    - 甲府市
+    - 甲斐市
+    - 南アルプス市
+    - 笛吹市
+    - 富士吉田市
+    - 北杜市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

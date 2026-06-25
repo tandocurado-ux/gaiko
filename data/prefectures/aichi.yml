@@ -1,0 +1,59 @@
+meta:
+  slug: aichi
+  name: 愛知県
+  region: 中部
+  page_url: https://tandocurado-ux.github.io/gaiko/aichi/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 都市部の狭小外構、郊外の駐車場需要、台風時の強風、夏の暑さを踏まえたい地域です。
+  top_needs:
+    - 駐車場2台以上の計画
+    - 台風時のカーポート耐風
+    - 目隠しフェンス
+    - 暑さと西日対策
+  area_blocks:
+    - name: 名古屋・尾張
+      note: 狭小地と駐車場需要を見て、門柱・宅配ボックス・目隠しを配置します。
+    - name: 三河
+      note: 車複数台、庭の管理、カーポート需要を整理します。
+    - name: 知多・西三河沿岸
+      note: 塩害と風を見て、金物とフェンスを選びます。
+    - name: 東三河
+      note: 風、雨、広い敷地の動線を確認します。
+  major_areas:
+    - 名古屋市
+    - 豊田市
+    - 岡崎市
+    - 一宮市
+    - 豊橋市
+    - 春日井市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

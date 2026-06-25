@@ -1,0 +1,59 @@
+meta:
+  slug: ibaraki
+  name: 茨城県
+  region: 関東
+  page_url: https://tandocurado-ux.github.io/gaiko/ibaraki/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 平野部の駐車場需要、沿岸の塩害、台風時の強風、郊外の広い敷地を分けて計画したい地域です。
+  top_needs:
+    - 駐車場拡張
+    - 台風時のフェンス強度
+    - 沿岸部の塩害対策
+    - 雨水排水
+  area_blocks:
+    - name: 水戸・県央
+      note: 戸建て外構では駐車場、門柱、目隠し、庭の管理範囲を先に決めます。
+    - name: つくば・県南
+      note: 新興住宅地ではデザイン統一、オープン外構、宅配ボックス需要を見ます。
+    - name: 鹿行・沿岸
+      note: 海風と塩害、強風に配慮して金物とフェンスを選びます。
+    - name: 県北・山間
+      note: 高低差と排水、土留め、アプローチの安全性を確認します。
+  major_areas:
+    - 水戸市
+    - つくば市
+    - 日立市
+    - 土浦市
+    - 取手市
+    - 鹿嶋市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

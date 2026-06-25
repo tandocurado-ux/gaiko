@@ -1,0 +1,59 @@
+meta:
+  slug: shimane
+  name: 島根県
+  region: 中国
+  page_url: https://tandocurado-ux.github.io/gaiko/shimane/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 日本海側の雨・雪・塩害、山間部の高低差、石見・出雲の地域差を分けて考えたい地域です。
+  top_needs:
+    - 塩害に強い金物
+    - 雪と雨の排水
+    - 高低差と擁壁確認
+    - 庭の管理負担軽減
+  area_blocks:
+    - name: 松江・出雲
+      note: 日本海側の雨風、住宅地の駐車場、目隠しを確認します。
+    - name: 石見
+      note: 沿岸風と塩害、斜面、排水を踏まえます。
+    - name: 雲南・奥出雲
+      note: 積雪、凍結、高低差を見て外構を選びます。
+    - name: 隠岐
+      note: 強風、塩害、資材搬入、メンテナンス性を重視します。
+  major_areas:
+    - 松江市
+    - 出雲市
+    - 浜田市
+    - 益田市
+    - 大田市
+    - 雲南市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

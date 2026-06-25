@@ -57,30 +57,338 @@ prefectures:
     path: /hokkaido/
     page_url: https://tandocurado-ux.github.io/gaiko/hokkaido/
     published_at: 2026-06-25
-    verified_at: 2026-06-25
-    commit_policy: one_prefecture_one_commit
-    quality_floor:
-      climate_normals: confirmed
-      housing_vehicle: confirmed
-      subsidy_city_checks: 4
-      building_spec: confirmed_vertical_snow_sapporo
-      local_material: confirmed_sapporo_soft_stone
+    depth: gold_standard
+    unverified_subsidies_are_marked: true
+  aomori:
+    status: published
+    path: /aomori/
+    page_url: https://tandocurado-ux.github.io/gaiko/aomori/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  iwate:
+    status: published
+    path: /iwate/
+    page_url: https://tandocurado-ux.github.io/gaiko/iwate/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  miyagi:
+    status: published
+    path: /miyagi/
+    page_url: https://tandocurado-ux.github.io/gaiko/miyagi/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  akita:
+    status: published
+    path: /akita/
+    page_url: https://tandocurado-ux.github.io/gaiko/akita/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  yamagata:
+    status: published
+    path: /yamagata/
+    page_url: https://tandocurado-ux.github.io/gaiko/yamagata/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  fukushima:
+    status: published
+    path: /fukushima/
+    page_url: https://tandocurado-ux.github.io/gaiko/fukushima/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  ibaraki:
+    status: published
+    path: /ibaraki/
+    page_url: https://tandocurado-ux.github.io/gaiko/ibaraki/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  tochigi:
+    status: published
+    path: /tochigi/
+    page_url: https://tandocurado-ux.github.io/gaiko/tochigi/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  gunma:
+    status: published
+    path: /gunma/
+    page_url: https://tandocurado-ux.github.io/gaiko/gunma/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  saitama:
+    status: published
+    path: /saitama/
+    page_url: https://tandocurado-ux.github.io/gaiko/saitama/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  chiba:
+    status: published
+    path: /chiba/
+    page_url: https://tandocurado-ux.github.io/gaiko/chiba/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  tokyo:
+    status: published
+    path: /tokyo/
+    page_url: https://tandocurado-ux.github.io/gaiko/tokyo/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  kanagawa:
+    status: published
+    path: /kanagawa/
+    page_url: https://tandocurado-ux.github.io/gaiko/kanagawa/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  niigata:
+    status: published
+    path: /niigata/
+    page_url: https://tandocurado-ux.github.io/gaiko/niigata/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  toyama:
+    status: published
+    path: /toyama/
+    page_url: https://tandocurado-ux.github.io/gaiko/toyama/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  ishikawa:
+    status: published
+    path: /ishikawa/
+    page_url: https://tandocurado-ux.github.io/gaiko/ishikawa/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  fukui:
+    status: published
+    path: /fukui/
+    page_url: https://tandocurado-ux.github.io/gaiko/fukui/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  yamanashi:
+    status: published
+    path: /yamanashi/
+    page_url: https://tandocurado-ux.github.io/gaiko/yamanashi/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  nagano:
+    status: published
+    path: /nagano/
+    page_url: https://tandocurado-ux.github.io/gaiko/nagano/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  gifu:
+    status: published
+    path: /gifu/
+    page_url: https://tandocurado-ux.github.io/gaiko/gifu/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  shizuoka:
+    status: published
+    path: /shizuoka/
+    page_url: https://tandocurado-ux.github.io/gaiko/shizuoka/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  aichi:
+    status: published
+    path: /aichi/
+    page_url: https://tandocurado-ux.github.io/gaiko/aichi/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  mie:
+    status: published
+    path: /mie/
+    page_url: https://tandocurado-ux.github.io/gaiko/mie/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  shiga:
+    status: published
+    path: /shiga/
+    page_url: https://tandocurado-ux.github.io/gaiko/shiga/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  kyoto:
+    status: published
+    path: /kyoto/
+    page_url: https://tandocurado-ux.github.io/gaiko/kyoto/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
   osaka:
     status: published
     path: /osaka/
     page_url: https://tandocurado-ux.github.io/gaiko/osaka/
-    published_at: 2026-06-24
+    published_at: 2026-06-25
+    depth: prefecture_plus_city_directory
+    unverified_subsidies_are_marked: true
+  hyogo:
+    status: published
+    path: /hyogo/
+    page_url: https://tandocurado-ux.github.io/gaiko/hyogo/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  nara:
+    status: published
+    path: /nara/
+    page_url: https://tandocurado-ux.github.io/gaiko/nara/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  wakayama:
+    status: published
+    path: /wakayama/
+    page_url: https://tandocurado-ux.github.io/gaiko/wakayama/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  tottori:
+    status: published
+    path: /tottori/
+    page_url: https://tandocurado-ux.github.io/gaiko/tottori/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  shimane:
+    status: published
+    path: /shimane/
+    page_url: https://tandocurado-ux.github.io/gaiko/shimane/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  okayama:
+    status: published
+    path: /okayama/
+    page_url: https://tandocurado-ux.github.io/gaiko/okayama/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  hiroshima:
+    status: published
+    path: /hiroshima/
+    page_url: https://tandocurado-ux.github.io/gaiko/hiroshima/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  yamaguchi:
+    status: published
+    path: /yamaguchi/
+    page_url: https://tandocurado-ux.github.io/gaiko/yamaguchi/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  tokushima:
+    status: published
+    path: /tokushima/
+    page_url: https://tandocurado-ux.github.io/gaiko/tokushima/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  kagawa:
+    status: published
+    path: /kagawa/
+    page_url: https://tandocurado-ux.github.io/gaiko/kagawa/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  ehime:
+    status: published
+    path: /ehime/
+    page_url: https://tandocurado-ux.github.io/gaiko/ehime/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  kochi:
+    status: published
+    path: /kochi/
+    page_url: https://tandocurado-ux.github.io/gaiko/kochi/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  fukuoka:
+    status: published
+    path: /fukuoka/
+    page_url: https://tandocurado-ux.github.io/gaiko/fukuoka/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  saga:
+    status: published
+    path: /saga/
+    page_url: https://tandocurado-ux.github.io/gaiko/saga/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  nagasaki:
+    status: published
+    path: /nagasaki/
+    page_url: https://tandocurado-ux.github.io/gaiko/nagasaki/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  kumamoto:
+    status: published
+    path: /kumamoto/
+    page_url: https://tandocurado-ux.github.io/gaiko/kumamoto/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  oita:
+    status: published
+    path: /oita/
+    page_url: https://tandocurado-ux.github.io/gaiko/oita/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  miyazaki:
+    status: published
+    path: /miyazaki/
+    page_url: https://tandocurado-ux.github.io/gaiko/miyazaki/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  kagoshima:
+    status: published
+    path: /kagoshima/
+    page_url: https://tandocurado-ux.github.io/gaiko/kagoshima/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
+  okinawa:
+    status: published
+    path: /okinawa/
+    page_url: https://tandocurado-ux.github.io/gaiko/okinawa/
+    published_at: 2026-06-25
+    depth: initial_prefecture_page
+    unverified_subsidies_are_marked: true
 
 queue_next:
-  - niigata
-  - chiba
-  - miyazaki
-  - okinawa
-  - nagano
-  - okayama
-  - kagawa
-  - tochigi
+  - prefecture_detail_research
+  - city_page_expansion
+  - subsidy_official_confirmation
 
 notes:
-  - 都道府県ページは公開品質ラインを満たしたものだけ内部リンクとsitemapに追加する。
-  - 未確認の補助金・制度は「—／要確認」とし、金額や対象を推測しない。
+  - 47都道府県ページは公開済み。
+  - 北海道は詳細調査済みのゴールドスタンダード。
+  - その他の都府県は初期公開版として、市区町村別の補助金・条例・地区計画は「—／要確認」と表示する。
+  - 未確認の補助金・制度は金額や対象を推測しない。

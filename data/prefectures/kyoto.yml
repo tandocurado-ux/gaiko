@@ -1,0 +1,59 @@
+meta:
+  slug: kyoto
+  name: 京都府
+  region: 近畿
+  page_url: https://tandocurado-ux.github.io/gaiko/kyoto/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 京都市内の景観・狭小地、北部の雪と沿岸風、南部の住宅地外構を分けて確認したい地域です。
+  top_needs:
+    - 景観・地区計画確認
+    - 狭小地の門まわり
+    - 北部の雪・塩害対策
+    - 道路境界確認
+  area_blocks:
+    - name: 京都市
+      note: 景観、町並み、狭小地、道路境界を確認し、門まわりを整えます。
+    - name: 山城
+      note: 住宅地の駐車場、目隠し、庭管理の相談が中心です。
+    - name: 丹波
+      note: 寒暖差と高低差、排水を見て仕様を決めます。
+    - name: 丹後・舞鶴
+      note: 雪、海風、塩害を踏まえて金物とフェンスを選びます。
+  major_areas:
+    - 京都市
+    - 宇治市
+    - 亀岡市
+    - 長岡京市
+    - 舞鶴市
+    - 福知山市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件

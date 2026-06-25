@@ -2,15 +2,20 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
+const ignoredDirs = new Set([".git", ".agents", ".codex", "assets", "data", "partials", "scripts", "templates"]);
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    if (entry.isDirectory() && ignoredDirs.has(entry.name)) {
+      return [];
+    }
+
     const fullPath = path.join(dir, entry.name);
     return entry.isDirectory() ? walk(fullPath) : [fullPath];
   });
 }
 
-const files = walk(path.join(root, "osaka")).filter((file) => path.basename(file) === "index.html");
+const files = walk(root).filter((file) => path.basename(file) === "index.html");
 const bad = [];
 
 for (const file of files) {
@@ -35,7 +40,7 @@ for (const file of files) {
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
     const href = match[1];
 
-    if (/^(https?:|#|mailto:|tel:)/.test(href)) {
+    if (/^(https?:|#|mailto:|tel:|\/)/.test(href)) {
       continue;
     }
 

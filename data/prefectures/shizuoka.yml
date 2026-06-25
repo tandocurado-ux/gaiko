@@ -1,0 +1,59 @@
+meta:
+  slug: shizuoka
+  name: 静岡県
+  region: 中部
+  page_url: https://tandocurado-ux.github.io/gaiko/shizuoka/
+  date_modified: 2026-06-25
+  verified_date: 2026-06-25
+  content_depth: initial_prefecture_page
+
+quality_gate:
+  page_type: prefecture
+  published: true
+  full_gold_standard: pending
+  unverified_subsidies_are_marked: true
+  visible_todos: false
+  photo_policy: real_photo_no_people_not_local施工実績
+
+local_profile:
+  summary: 温暖な沿岸、台風・強風、塩害、富士山麓の寒冷差、地震・津波想定を分けて考えたい地域です。
+  top_needs:
+    - 台風時の耐風
+    - 塩害に強い金物
+    - 地震時のブロック塀安全
+    - 雨水排水
+  area_blocks:
+    - name: 静岡・中部
+      note: 住宅地の駐車場、目隠し、強風時のフェンス安全を確認します。
+    - name: 浜松・西部
+      note: 風と日射、広い敷地の駐車場計画を重視します。
+    - name: 沼津・伊豆
+      note: 塩害、斜面、津波浸水想定を踏まえ、金物と塀を選びます。
+    - name: 富士・御殿場
+      note: 山麓の寒冷差、雨、勾配を見て排水を整理します。
+  major_areas:
+    - 静岡市
+    - 浜松市
+    - 沼津市
+    - 富士市
+    - 磐田市
+    - 藤枝市
+
+official_source_policy:
+  - label: 気象庁 過去の気象データ検索
+    url: https://www.data.jma.go.jp/stats/etrn/index.php
+    verified_date: 2026-06-25
+  - label: 国土地理院 ハザードマップポータルサイト
+    url: https://disaportal.gsi.go.jp/
+    verified_date: 2026-06-25
+  - label: e-Stat 政府統計の総合窓口
+    url: https://www.e-stat.go.jp/
+    verified_date: 2026-06-25
+  - label: 自動車検査登録情報協会 自家用乗用車普及状況
+    url: https://www.airia.or.jp/publish/statistics/mycar.html
+    verified_date: 2026-06-25
+
+unconfirmed_items:
+  - 市区町村別のブロック塀撤去補助金額・受付期間
+  - 生垣・緑化・雨水タンクなど年度更新型制度
+  - 地区計画・景観地区・がけ条例など所在地別条件
