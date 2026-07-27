@@ -2,8 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const SITE_URL = "https://tandocurado-ux.github.io/gaiko";
+const SITE_URL = "https://www.coooi.info";
 const BRAND = "エクステリア外構工事地域相談窓口Coooi";
+const brand = "coooi";
 const DATE = "2026-06-24";
 const HERO_IMAGE = `${SITE_URL}/assets/photos/real-exterior-garden-fence.jpg`;
 
@@ -528,11 +529,20 @@ function slugUrl(city) {
 }
 
 function pageTitle(city) {
-  return `${city.name}の外構工事・エクステリア費用と確認ポイント`;
+  return `${city.name}のエクステリア・外構工事情報サイト｜費用相場・補助金・施工の流れ ${brand}`;
+}
+
+function ogTitle(city) {
+  return `${city.name}のエクステリア・外構工事情報サイト`;
+}
+
+function metaKeywords(city) {
+  return `${city.name} 外構工事, ${city.name} エクステリア, ${city.name} 外構 費用, ${city.name} カーポート工事, ${city.name} フェンス工事`;
 }
 
 function metaDescription(city) {
-  return `${city.name}で外構工事やエクステリア工事業者に依頼する前に確認したい、費用目安、対応エリア、外構タイプ、補助・制度の確認順、業者比較のポイントを整理。`;
+  const districtText = city.districts.slice(0, 3).join("・");
+  return `${city.name}の外構・エクステリア工事の費用相場、${districtText}など地区別の確認ポイント、施工の流れ、業者選びの確認点、よくある質問をまとめた地域情報サイトです。`;
 }
 
 function profileOf(city) {
@@ -674,15 +684,16 @@ function cityPage(city) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(pageTitle(city))} | ${escapeHtml(BRAND)}</title>
+  <title>${escapeHtml(pageTitle(city))}</title>
   <meta name="description" content="${escapeHtml(metaDescription(city))}">
+  <meta name="keywords" content="${escapeHtml(metaKeywords(city))}">
   <link rel="canonical" href="${slugUrl(city)}">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="${escapeHtml(pageTitle(city))}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${escapeHtml(ogTitle(city))}">
   <meta property="og:description" content="${escapeHtml(metaDescription(city))}">
   <meta property="og:url" content="${slugUrl(city)}">
   <meta property="og:image" content="${HERO_IMAGE}">
-  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">
 ${jsonLd(city)}
   </script>
@@ -690,7 +701,7 @@ ${jsonLd(city)}
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="主要ナビゲーション">
-      <a class="brand" href="../../" aria-label="トップへ">${escapeHtml(BRAND)}</a>
+      <a class="brand" href="/" aria-label="トップへ">${escapeHtml(BRAND)}</a>
       <div class="nav-links city-nav-links">
         <a href="#profile">需要</a>
         <a href="#local">地域</a>
@@ -705,8 +716,8 @@ ${jsonLd(city)}
   </header>
 
   <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="../../">TOP</a>
-    <a href="../">大阪府</a>
+    <a href="/">TOP</a>
+    <a href="/osaka/">大阪府</a>
     <span aria-current="page">${escapeHtml(city.name)}</span>
   </nav>
 
@@ -956,7 +967,7 @@ ${buildAreaCards(city)}
       </div>
       <div class="warning-card">
         <strong>写真と見積条件をそろえる</strong>
-        <p>同じ写真・同じ要望・同じ工事範囲で依頼しないと、金額差の理由が見えにくくなります。選び方の詳しい確認軸は<a class="official-link" href="../../guide/choose-contractor/">外構業者の選び方ガイド</a>にまとめています。</p>
+        <p>同じ写真・同じ要望・同じ工事範囲で依頼しないと、金額差の理由が見えにくくなります。選び方の詳しい確認軸は<a class="official-link" href="/guide/choose-contractor/">外構業者の選び方ガイド</a>にまとめています。</p>
       </div>
     </section>
 
@@ -989,8 +1000,8 @@ ${keywordAccordions(city)}
         <p>境界、見積もり、施工後の不具合など、地域を問わず出やすい疑問はガイドに集約しています。</p>
       </div>
       <div class="contact-grid">
-        <article class="contact-card"><b>見積もりの見方</b><p><a class="official-link" href="../../guide/gaiko-estimate/">外構見積もりの見方</a>で、一式見積もりと諸経費を確認します。</p></article>
-        <article class="contact-card"><b>境界トラブル</b><p><a class="official-link" href="../../guide/boundary-neighbor/">境界・近隣トラブルの備え</a>で、フェンス位置と工事中の配慮を確認します。</p></article>
+        <article class="contact-card"><b>見積もりの見方</b><p><a class="official-link" href="/guide/gaiko-estimate/">外構見積もりの見方</a>で、一式見積もりと諸経費を確認します。</p></article>
+        <article class="contact-card"><b>境界トラブル</b><p><a class="official-link" href="/guide/boundary-neighbor/">境界・近隣トラブルの備え</a>で、フェンス位置と工事中の配慮を確認します。</p></article>
       </div>
     </section>
 
@@ -1044,7 +1055,7 @@ ${keywordAccordions(city)}
       <ul class="side-list">
         <li><a href="${escapeHtml(city.officialUrl)}">${escapeHtml(city.name)}公式サイト</a></li>
         <li><a href="https://www.pref.osaka.lg.jp/">大阪府公式サイト</a></li>
-        <li><a href="../">大阪府の市ページ一覧</a></li>
+        <li><a href="/osaka/">大阪府の市ページ一覧</a></li>
       </ul>
     </div>
     <div class="side-card">
@@ -1073,7 +1084,7 @@ function osakaIndexPage() {
           </div>
           <div class="region-grid city-directory">
             ${items
-              .map((city) => `<a class="region" href="${city.slug}/"><b>${escapeHtml(city.name)}</b><span>${escapeHtml(city.districts.slice(0, 4).join("・"))}</span></a>`)
+              .map((city) => `<a class="region" href="/osaka/${city.slug}/"><b>${escapeHtml(city.name)}</b><span>${escapeHtml(city.districts.slice(0, 4).join("・"))}</span></a>`)
               .join("\n            ")}
           </div>
         </section>`;
@@ -1085,30 +1096,31 @@ function osakaIndexPage() {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>大阪府の外構工事・エクステリア市ページ一覧 | ${escapeHtml(BRAND)}</title>
-  <meta name="description" content="大阪府内33市の外構工事・エクステリア情報ページ一覧。大阪市、堺市、豊中市、吹田市、枚方市、東大阪市など、市別に費用目安、地域事情、補助制度の確認順を整理。">
+  <title>大阪府のエクステリア・外構工事情報サイト｜費用相場・補助金・業者選び ${brand}</title>
+  <meta name="description" content="大阪府の外構・エクステリア工事の費用相場、都市部の狭小地・湾岸部の塩害・ブロック塀対策、市町村別の補助金の確認先、業者選びの要点をまとめた地域情報サイトです。">
+  <meta name="keywords" content="大阪府 外構工事, 大阪府 エクステリア, 大阪府 外構 費用, 大阪府 カーポート">
   <link rel="canonical" href="${SITE_URL}/osaka/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="大阪府の外構工事・エクステリア市ページ一覧">
-  <meta property="og:description" content="大阪府内33市の外構工事・エクステリア情報ページ一覧です。">
+  <meta property="og:title" content="大阪府のエクステリア・外構工事情報サイト">
+  <meta property="og:description" content="大阪府の外構・エクステリア工事の費用相場、都市部の狭小地・湾岸部の塩害・ブロック塀対策、市町村別の補助金の確認先、業者選びの要点をまとめた地域情報サイトです。">
   <meta property="og:url" content="${SITE_URL}/osaka/">
   <meta property="og:image" content="${HERO_IMAGE}">
-  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="主要ナビゲーション">
-      <a class="brand" href="../" aria-label="トップへ">${escapeHtml(BRAND)}</a>
+      <a class="brand" href="/" aria-label="トップへ">${escapeHtml(BRAND)}</a>
       <div class="nav-links">
         <a href="#cities">市一覧</a>
-        <a href="../guide/gaiko-estimate/">見積もり</a>
-        <a href="../guide/choose-contractor/">業者選び</a>
+        <a href="/guide/gaiko-estimate/">見積もり</a>
+        <a href="/guide/choose-contractor/">業者選び</a>
       </div>
     </nav>
   </header>
 
   <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="../">TOP</a>
+    <a href="/">TOP</a>
     <span aria-current="page">大阪府</span>
   </nav>
 
@@ -1120,7 +1132,7 @@ function osakaIndexPage() {
         <p class="hero-lead">大阪市、堺市、豊中市、吹田市、枚方市、東大阪市など、大阪府内の市ごとに外構工事の確認ポイントを整理しています。</p>
         <div class="hero-actions">
           <a class="button primary" href="#cities">市一覧を見る</a>
-          <a class="button" href="../guide/choose-contractor/">業者選びを見る</a>
+          <a class="button" href="/guide/choose-contractor/">業者選びを見る</a>
         </div>
       </div>
       <div class="hero-panel">
@@ -1153,14 +1165,14 @@ ${grouped}
 }
 
 function cityCard(city) {
-  return `<a class="region" href="osaka/${city.slug}/"><b>${escapeHtml(city.name)}</b><span>${escapeHtml(city.group)} / ${escapeHtml(city.districts.slice(0, 3).join("・"))}</span></a>`;
+  return `<a class="region" href="/osaka/${city.slug}/"><b>${escapeHtml(city.name)}</b><span>${escapeHtml(city.group)} / ${escapeHtml(city.districts.slice(0, 3).join("・"))}</span></a>`;
 }
 
 function updateHomePage() {
   const file = path.join(ROOT, "index.html");
   const html = fs.readFileSync(file, "utf8");
   const cityGrid = `      <div class="region-grid city-directory" aria-label="地域ページ一覧">
-        <a class="region region-feature" href="osaka/"><b>大阪府の市一覧</b><span>府内33市のページを公開</span></a>
+        <a class="region region-feature" href="/osaka/"><b>大阪府の市一覧</b><span>府内33市のページを公開</span></a>
         ${cities.map(cityCard).join("\n        ")}
       </div>
       <div class="note" role="note">

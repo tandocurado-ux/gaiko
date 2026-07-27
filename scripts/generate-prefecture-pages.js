@@ -4,7 +4,8 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const today = "2026-06-25";
 const siteName = "エクステリア外構工事地域相談窓口Coooi";
-const baseUrl = "https://tandocurado-ux.github.io/gaiko";
+const brand = "coooi";
+const baseUrl = "https://www.coooi.info";
 
 const sourceLinks = [
   { label: "気象庁 過去の気象データ検索", url: "https://www.data.jma.go.jp/stats/etrn/index.php" },
@@ -708,8 +709,11 @@ function sourceList() {
 
 function renderPrefecturePage(pref) {
   const url = `${baseUrl}/${pref.slug}/`;
-  const title = `${pref.name}の外構工事・エクステリア地域相談ページ | ${siteName}`;
-  const description = `${pref.name}で外構工事・エクステリア工事を検討する前に、地域事情、対応エリア、工事種類、素材、料金目安、補助・制度の確認先を整理。`;
+  const focus = pref.topNeeds.slice(0, 3).join("・");
+  const title = `${pref.name}のエクステリア・外構工事情報サイト｜費用相場・補助金・業者選び ${brand}`;
+  const description = `${pref.name}の外構・エクステリア工事の費用相場、${focus}、市町村別の補助金の確認先、業者選びの要点をまとめた地域情報サイトです。`;
+  const keywords = `${pref.name} 外構工事, ${pref.name} エクステリア, ${pref.name} 外構 費用, ${pref.name} カーポート`;
+  const ogTitle = `${pref.name}のエクステリア・外構工事情報サイト`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -780,13 +784,14 @@ function renderPrefecturePage(pref) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${html(title)}</title>
   <meta name="description" content="${html(description)}">
+  <meta name="keywords" content="${html(keywords)}">
   <link rel="canonical" href="${url}">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="${html(`${pref.name}の外構工事・エクステリア地域相談ページ`)}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${html(ogTitle)}">
   <meta property="og:description" content="${html(description)}">
   <meta property="og:url" content="${url}">
   <meta property="og:image" content="${baseUrl}/assets/photos/real-exterior-garden-fence.jpg">
-  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
   </script>
@@ -794,7 +799,7 @@ ${JSON.stringify(jsonLd, null, 2)}
 <body class="prefecture-page ${pref.slug}-prefecture">
   <header class="site-header">
     <nav class="nav" aria-label="主要ナビゲーション">
-      <a class="brand" href="../" aria-label="トップへ">${siteName}</a>
+      <a class="brand" href="/" aria-label="トップへ">${siteName}</a>
       <div class="nav-links city-nav-links">
         <a href="#needs">需要</a>
         <a href="#area">地域</a>
@@ -806,7 +811,7 @@ ${JSON.stringify(jsonLd, null, 2)}
   </header>
 
   <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="../">TOP</a>
+    <a href="/">TOP</a>
     <span aria-current="page">${html(pref.name)}</span>
   </nav>
 
@@ -971,7 +976,7 @@ ${costFactors.map((factor) => `            <tr><th scope="row">${html(factor)}</
         <article class="process-card"><h3>3. 制度確認</h3><p>補助金や条例は市区町村公式情報で年度と受付状況を確認します。</p></article>
         <article class="process-card"><h3>4. 比較</h3><p>保証、追加費用、工期、近隣対応、施工後の不具合対応を確認します。</p></article>
       </div>
-      <div class="note top-gap" role="note">全国共通の比較軸は <a class="official-link" href="../guide/choose-contractor/">外構業者の選び方</a> と <a class="official-link" href="../guide/product-select/">設備・製品の選び方</a> も確認してください。</div>
+      <div class="note top-gap" role="note">全国共通の比較軸は <a class="official-link" href="/guide/choose-contractor/">外構業者の選び方</a> と <a class="official-link" href="/guide/product-select/">設備・製品の選び方</a> も確認してください。</div>
     </section>
 
     <section id="faq" class="section">
@@ -1090,9 +1095,9 @@ function updateIndex() {
   let content = fs.readFileSync(indexPath, "utf8");
   const cards = prefectures.map((pref) => {
     const feature = pref.slug === "hokkaido" || pref.slug === "osaka" ? " region-feature" : "";
-    return `        <a class="region${feature}" href="${pref.slug}/"><b>${html(pref.name)}</b><span>${html(stripTags(pref.profile))}</span></a>`;
+    return `        <a class="region${feature}" href="/${pref.slug}/"><b>${html(pref.name)}</b><span>${html(stripTags(pref.profile))}</span></a>`;
   }).join("\n");
-  if (!cards.includes('href="osaka/"')) {
+  if (!cards.includes('href="/osaka/"')) {
     throw new Error("大阪府カードが生成対象に含まれていません。");
   }
   content = content.replace(
